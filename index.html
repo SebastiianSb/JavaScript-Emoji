@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji Launchpad</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" /> 
+</head>
+<body>
+  <div class="display">
+    <span id="emoji-screen">¿Are you ready?</span>  
+  </div>
+
+  <div class="text">
+    <span id="subtitle">¡Press one of these keys to see the emoji!</span>  
+  </div>
+  <div class="keys">
+
+  <div class="keys">
+    
+    <div data-key="65" data-emoji="😎" class="key">
+      <kbd>A</kbd>
+      <span class="label">Cool</span>
+    </div>
+
+    <div data-key="83" data-emoji="🔥" class="key">
+      <kbd>S</kbd>
+      <span class="label">Fuego</span>
+    </div>
+
+    <div data-key="68" data-emoji="💩" class="key">
+      <kbd>D</kbd>
+      <span class="label">Oops</span>
+    </div>
+
+    <div data-key="70" data-emoji="🦄" class="key">
+      <kbd>F</kbd>
+      <span class="label">Magic</span>
+    </div>
+
+    <div data-key="71" data-emoji="🚀" class="key">
+      <kbd>G</kbd>
+      <span class="label">Go</span>
+    </div>
+  </div>
+
+  <script>
+
+    function activeEmoji(e){
+      const active = document.querySelector(`div[data-key="${e.keyCode}"]`)
+      if(!active) return
+
+      const screen = document.querySelector('#emoji-screen')
+      const emojiSave = active.dataset.emoji
+      screen.innerText = emojiSave
+      active.classList.add("key-press")
+
+    }
+
+    function removeTransition(e){
+      if(e.propertyName !== 'transform') return
+      e.target.classList.remove('key-press')
+    }
+
+
+    const keys = Array.from(document.querySelectorAll('.key'))
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    window.addEventListener("keydown", activeEmoji)
+    
+  </script>
+</body>
+</html>
