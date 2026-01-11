@@ -1,0 +1,16 @@
+{
+  "name": "emoji-launchpad",
+  "version": "1.0.0",
+  "description": "An interactive emoji keyboard that displays emojis when you press specific keys",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["emoji", "keyboard", "interactive"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
