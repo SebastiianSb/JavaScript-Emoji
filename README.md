@@ -1,6 +1,6 @@
 # Emoji Launchpad 🎹
 
-An interactive emoji keyboard that displays emojis when you press specific keys on your keyboard. Perfect for fun presentations, streams, or just playing around!
+An interactive emoji keyboard that displays emojis when you press specific keys on your keyboard.
 
 ![Emoji Launchpad Preview](https://fav.farm/🔥)
 
