@@ -86,13 +86,9 @@ Works in all modern browsers:
 - Safari
 - Opera
 
-## License 📝
-
-This project is open source and free to use for any purpose.
-
 ## Credits 👏
 
-Built with ❤️ using HTML, CSS, and JavaScript
+Created by Juan Sebastián Andrade Sánchez - Built with ❤️ using HTML, CSS, and JavaScript
 
 ---
 
